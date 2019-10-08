@@ -1,21 +1,33 @@
-Please download, extract and place the follwing folders in working directory
+# Prose for a Painting
 
-Folders - 
+Painting captions are often dry and simplistic which motivates us to describe a painting creatively in the style ofShakespearean prose. This is a difficult problem, since there does not exist a large supervised dataset from paintings to Shakespearean prose.  Our solution is to use an intermediate English poem description of the painting and then apply language style transfer which results in Shakespearean prose describing the painting.
 
-img2poem
-https://www.dropbox.com/s/ne5zkz8ghnco8g5/img2poem-20190521T195508Z-001.zip?dl=0
+## Setup
 
-Shakespearizing-Modern-English
-https://www.dropbox.com/s/af2ig8jlrs6tj4h/Shakespearizing-Modern-English-20190521T195553Z-001.zip?dl=0
+All instructions for downloading prerequisites can be found in the jupyter notebook.
 
-------------------------------------------------------------------------------------------------------
+## Running the notebook
 
-Models - 
+Please download, extract and place the following folders in working directory before running the notebook. These folders contain additional code and data for running the notebook.
 
-please download, extract and place under img2poem/code/
-img2poem model - 
-https://www.dropbox.com/s/2y0mn7a48b56btx/img2poem_model.zip?dl=0
+```bash
+git clone https://github.com/researchmm/img2poem
+git clone https://github.com/harsh19/Shakespearizing-Modern-English
+```
 
-please download, extract and place under Shakespearizing-Modern-English/code/models/
-Shakespeare model -
-https://www.dropbox.com/s/fk0yse63vz2wybe/shakespeare_model.zip?dl=0
+## Downloading the models
+
+[img2poem model](https://www.dropbox.com/s/2y0mn7a48b56btx/img2poem_model.zip?dl=0): Please download, extract and place under img2poem/code
+
+[text style transfer model](https://www.dropbox.com/s/fk0yse63vz2wybe/shakespeare_model.zip?dl=0)
+Please download, extract and place under Shakespearizing-Modern-English/code/models
+
+## Citations
+```
+@article{kashyap2019proseforapainting,
+  title={Prose for a Painting},
+  author={Kashyap, Prerna and Phatale, Samrat and Drori, Iddo},
+  journal={ICCV Workshop on Closing the Loop Between Vision and Language, 2019},
+  year={2019}
+}
+```
